@@ -18,7 +18,7 @@ Designed with a mathematical approach to state management and algorithmic routin
   * Payment processes are isolated into a secure, dynamic Streamlit UI Modal (`@st.dialog`), ensuring sensitive data never enters the LLM's prompt history.
 * **Automated Post-Action Triggers:** Successful payments autonomously trigger deterministic Python backend functions to generate secure PNR codes and send HTML-formatted confirmation emails via SMTP.
 
-## Tool Calling Implementation
+##  Tool Calling Implementation
 The model is equipped with a restricted, highly specific set of JSON schema tools to interact with the environment:
 
 1. `bos_oda_bul`: Queries the SQLite database for available rooms based on dates and category, filtering out overlapping reservations.
@@ -28,14 +28,10 @@ The model is equipped with a restricted, highly specific set of JSON schema tool
 
 *(Note: Critical functions like `guvenli_mail_gonder` and `rezervasyon_kodu_uret` are intentionally kept out of the LLM's toolset to adhere to the Principle of Least Privilege and prevent prompt injection.)*
 
-## 🛠️ Technology Stack
+##  Technology Stack
 * **LLM & Orchestration:** OpenAI API (`gpt-4o-mini`)
 * **Frontend UI:** Streamlit (with Custom CSS for a Figma-like dark theme experience)
 * **Backend & Data Manipulation:** Python, Pandas
 * **Database:** SQLite
 * **Networking (Colab Deployment):** Cloudflare Tunnels
-
-
-   git clone [https://github.com/YOUR_USERNAME/AI-Hotel-Reservation-Agent.git](https://github.com/YOUR_USERNAME/AI-Hotel-Reservation-Agent.git)
-   cd AI-Hotel-Reservation-Agent
 
