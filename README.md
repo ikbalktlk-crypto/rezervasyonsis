@@ -35,10 +35,7 @@ The model is equipped with a restricted, highly specific set of JSON schema tool
 * **Database:** SQLite
 * **Networking (Colab Deployment):** Cloudflare Tunnels
 
-## How to Run Locally
 
-1. **Clone the repository:**
-   ```bash
    git clone [https://github.com/YOUR_USERNAME/AI-Hotel-Reservation-Agent.git](https://github.com/YOUR_USERNAME/AI-Hotel-Reservation-Agent.git)
    cd AI-Hotel-Reservation-Agent
 
